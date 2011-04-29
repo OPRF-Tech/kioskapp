@@ -1,5 +1,5 @@
 <?php
 	
-	$kiosk = "/kioskapp";
+	$kiosk = "./";
 	
 ?>
