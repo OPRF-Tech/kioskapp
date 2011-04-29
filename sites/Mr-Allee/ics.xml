@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet [
+<!ENTITY nbsp "&#160;">
+]> 
+<?xml-stylesheet type="text/xsl" href="xsl/main.xsl"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<h2>Intro to Computer Science</h2>
+
+<ul class="icolist">
+	<li>
+		<a href="listScores">
+			<img src="images/grades.png" /> <span>Project Grades</span>
+		</a>
+	</li>
+	
+	<li>
+		<a href="codeball">
+			<img src="images/codeball.png" /> <span>Codeball Problems</span>
+		</a>
+	</li>
+	
+	<li>
+		<a href="listAssignments?course=Intro+to+Computer+Science">
+			<img src="images/cal.png" /> <span>Class Calendar</span>
+		</a>
+	</li>
+	
+	<li>
+		<a href="icsCourseProfile.xml">
+			<img src="images/profile.png" /> <span>Course Syllabus</span>
+		</a>
+	</li>
+</ul>
+<!--<p class="bold">&nbsp;&nbsp;&nbsp;&nbsp;<a href="csHomeSetup.xml">How to Setup a Home Computer</a></p>-->
+
+<!--<li>
+<a href="otherResources/projectsICS/icsExamples.html"><img src="images/student.png" />
+<p>Example of Student Work</p></a>
+</li>
+-->
+ 
+<br style="clear: both;" />
+
+<br/>
+</page>

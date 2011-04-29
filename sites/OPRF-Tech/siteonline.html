@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<title>Get Your Website Online | OPRF Tech | The OPRF HS Technology Club</title>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold,italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel=stylesheet href=style.css type=css />
+</head>
+<body>
+	<div id=wrapper>
+		<a href=index.html>
+			<img src="oprftech.png" alt="OPRF Tech | The OPRF HS Technology Club" id=oprftech />
+		</a>
+		
+		<article>
+			<div id=big>
+				<p>There are many reasons why you might want to get your own website online,
+				but regardless of the reason, you want it online. We at the OPRF Technology
+				Club understand, and are here to help you
+				somethingreallylongthatshouldntshowupeverandifitdoessomethingbroke</p>
+			</div>
+			
+			<div id=normal>
+				<p>achieve that goal, using only free services. The reason we've written this
+				guide is simply so that if our members (or former members) forget how they did 
+				it during our 'online setup days' they've got the instructions laid out in 
+				front of them.</p>
+				
+				<div class=lfloat>
+					<p><em>Before you get started</em><br />
+					You're going to need a few tools:</p>
+					
+					<ul class=none>
+						<li>
+							<a href=http://filezilla-project.org/download.php?type=client>FileZilla</a>
+							or another ftp client<br />
+							<small>FileZilla is an open source ftp (file transfer protocol) client that
+							you can use to move files from your computer to your server.</small>
+						</li>
+						<li>
+							<a href=http://jedit.org>jEdit</a> or another text editor<br />
+							<small>jEdit is going to be used before you even start the hosting
+							process, because you need to make a website before you can host a website.
+							If you already have a website made you can ignore this requirement.</small>
+						</li>
+						<li>
+							A Website<br />
+							<small>While it may seem self-explanatory, but you do need a website before
+							you can put a website online.</small>
+						</li>
+					</ul>
+				</div>
+				
+				<p><em>Hosting with <strong>
+				<a href=http://000webhost.com>000webhost</a></strong></em><br />
+				<small>The reason we use 000freehosting is simply because their <em>free</em>. If you
+				happen to be willing to spend money or want professional hosting, do so. I can
+				suggest <a href=http://mediatemple.net>MediaTemple</a> and 
+				<a href=http://stuzzhosting.com>StuzzHosting</a> to anyone looking for professional
+				hosting.</small></p>
+				
+				<ol>
+					<li>
+						Go to <a href=http://000webhost.com>000's site</a> and sign up for an account and hosting.
+						It make take a minute or two to be processed and ready to go<br />
+						<small>Right now you don't have a domain (unless you set one up separately), so
+						just use one of their second level domains.</small>
+					</li>
+					<li>
+						Once you've been processed, enter your control panel, the important things are all
+						either in your head or in the sidebar.<br />Copy the Username (it's a followed by a
+						string of numbers), you're going to use this in FileZilla.
+					</li>
+					<li>
+						Open FileZilla if you don't already have it open, and click on the site's icon (the
+						first icon in the toolbar). You should see the Site Manager.<br />
+						<small>You can come back to this later for other sites you setup too. It also has
+						the ability to change FileZilla settings just for one site.</small>
+					</li>
+					<li>
+						<div class=lfloat>
+							The <strong>Host</strong> is <em>your site's address</em><br /> 
+							Leave the <strong>Port</strong> blank<br />
+							The <strong>Server Type</strong> is <em>FTP - File Transfer Protocol</em><br />
+							The <strong>Logon Type</strong> is <em>Normal</em><br />
+							The <strong>User</strong> is the <em>username you copied earlier</em><br />
+							And the <strong>Password</strong> is <em>your chosen password</em>
+						</div>
+						Click on the "New Site" button.<br />
+						<small>The settings are to the left.</small><br />
+					</li>
+					<li>
+						Don't close out of the Site Manager, but click Connect down at the bottom. This will
+						connect you to your site.<br />
+						<small>To connect to your site again, click on the same icon, choose your site, and
+						click connect. If you're on windows (I don't know about OSX), you'll have a drop down
+						button next to the icon, click it and your site to connect, sorry Linux users.</small>
+					</li>
+					<li>
+						<div class=lfloat>
+							<p>You can, if you want, set FileZilla to automatically open the publicftp directory
+							open the site manager, choose the current site, and open the Advanced tab.</p>
+							
+							<p>In the Advanced tab there's a &ldquo;Default remote directory&rdquo; field,
+							change that to <code>/publicftp</code>, and you'll now automatically connect to the
+							publicftp directory</p>
+						</div>
+						
+						The default directory for 000 sites isn't where you're supposed to upload files (in 
+						fact they even put a file called .DONOTUPLOAD in the directory. You need to upload to
+						the publicftp directory. As such, open the publicftp directory, and drag your files from
+						your file browser of choice into the publicftp directory.<br />
+					</li>
+					<li>
+						Now navigate to your site, you should see the site you just uploaded (unless you don't
+						have your home page named index.html, index.php, index.htm, or default in place of index).
+					</li>
+				</ol>
+			</div>
+		</article>
+	</div>
+</body>
+</html>

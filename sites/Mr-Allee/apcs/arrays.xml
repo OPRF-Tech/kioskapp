@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet [<!ENTITY nbsp "&#160;">]> 
+<?xml-stylesheet type="text/xsl" href="/xsl/main.xsl"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<h1>Standard Java Arrays</h1>
+<h2>Declaring and instantiating arrays:</h2>
+<table class="notes">
+<tr class="notes">
+	<td class="code">int[] nums = new int[10];</td>
+	<td class="desc">Declares and instantiates an array of 10 
+		<span class="inCode">int</span>
+		 values called nums
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">int[] nums;<br/>nums = new int[10];</td>
+	<td class="desc">Same thing except using two statements	</td>
+</tr>
+<tr class="notes">
+	<td class="code">SmileyFace[] smiles = new SmileyFace[5];</td>
+	<td class="desc">Declares and instantiates an array of 5 <span class="inCode">SmileyFace</span> objects called smiles</td>
+</tr>
+<tr class="notes">
+	<td class="code">SmileyFace[] smiles<br/>smiles = new SmileyFace[5];</td>
+	<td class="desc">Same thing except using two statements	</td>
+</tr>
+</table>
+<br/>
+<br/>
+<img src="arrays.jpg"/>
+<br/>
+<br/>
+<h2>Examples of putting values into arrays:</h2>
+<table class="notes">
+<tr class="notes">
+	<td class="code">
+		nums[0] = 5;<br/>
+	</td>
+	<td class="desc">
+		Puts the number 5 into the 1st element of the nums array<br/>
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		nums[0] = 10 * 6 - 3;<br/>
+	</td>
+	<td class="desc">
+		Calculates 10 * 6 - 3 and puts the result into the 1st element of the nums array<br/>
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		smiles[0] = new SmileyFace(10, 50, 100, Color.BLUE, null);			
+	</td>
+	<td class="desc">
+		Instantiates a new SmileyFace object and puts a reference to it into the 1st element of the smiles array
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		nums[4] = 125;<br/>
+	</td>
+	<td class="desc">
+		Puts the number 125 into index 4 of the nums array (which is really the 5th element)<br/>
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		int i = 4;<br/>
+		nums[i] = 125;<br/>
+	</td>
+	<td class="desc">
+		Same as above except uses a variable for the index number.  <b>VERY POWERFUL!</b>
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		nums[nums.length-1] = 256;			
+	</td>
+	<td class="desc">
+		Puts the number 256 into the <b>last</b> element of the nums array
+	</td>
+</tr>
+</table>
+<br/>
+<br/>
+<h2>Examples of accessing values in arrays:</h2>
+<table class="notes">
+<tr class="notes">
+	<td class="code">
+		System.out.println(nums[0]);
+	</td>
+	<td class="desc">
+		Prints the int that is stored in the 1st element of the nums array
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		System.out.println(nums[3]);
+	</td>
+	<td class="desc">
+		Prints the int that is stored in at index 3 in the nums array (which is really the 4th element)
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		System.out.println(nums[nums.length-1]);
+	</td>
+	<td class="desc">
+		Prints the int that is stored in the last element of the nums array
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		System.out.println(smiles[1]);
+	</td>
+	<td class="desc">
+		Goes to the SmileyFace object referenced by index 1 of the smiles array (the 2nd element), calls the .toString() method on it, and sends the return value to println().
+	</td>
+</tr>
+</table>
+<br/>
+<br/>
+<h2>Misc techniques using arrays</h2>
+<table class="notes">
+<tr class="notes">
+	<td class="code">
+		nums.length;<br/>
+		smiles.length;
+	</td>
+	<td class="desc">
+		Represents the number of elements in an array.  <br /><br />
+		Note that the last element of an array is .length-1 since the indexes start at 0.<br/><br/>
+		Also note: This is not standard.  Standard practice would expose a method to do this, and it would end with empty parentheses.  .length on an array is an old part of the language that doesn't adhere to standards.  
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		int[] nums = {564, 23, 12, 156};
+	</td>
+	<td class="desc">
+		Short-cut code that declares, instantiates, and loads four numbers into an array of int values called nums
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		int[] nums = new int[10];<br/><br/>
+		for (int i = 0; i &lt; nums.length; i++) {<br/>
+		&nbsp;&nbsp;System.out.print("Please enter the value for index " + i);<br/>
+		&nbsp;&nbsp;nums[i] = Keyboard.readInt();<br/>
+		}
+	</td>
+	<td class="desc">
+		Loads an array of values from numbers typed in at the keyboard using a for loop
+	</td>
+</tr>
+<tr class="notes">
+	<td class="code">
+		for (int i = 0; i &lt; nums.length; i++) {<br/>
+		&nbsp;&nbsp;System.out.print("The value at index " + i + " is " + nums[i]);<br/>
+		}
+	</td>
+	<td class="desc">
+		Prints all the values in an array using a for loop
+	</td>
+</tr>
+</table>
+<br/>
+<br/>
+</page>

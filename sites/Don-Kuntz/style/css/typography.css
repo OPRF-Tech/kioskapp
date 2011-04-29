@@ -1,0 +1,140 @@
+/* Type and style stuff */
+
+/* basics */
+
+body, p {
+	font-family: "Meta Serif", "Droid Serif", serif;
+	font-size:12pt;
+}
+
+p {
+	line-height:1.45em;
+	padding-bottom:1.45em;
+}
+
+strong {
+	font-weight:bold;
+}
+
+em {
+	font-weight:italic;
+}
+
+ul, ol {
+	padding-bottom:.6em;
+	padding-left:20px;
+}
+li {
+	padding-bottom:.7em;
+	line-height:1.3em;
+}
+
+a {
+	text-decoration:none;
+	font-weight:bold;
+	color:rgb(150,150,150);
+}
+p a {
+	font-style:italic;
+}
+p a:hover, h2 a:hover {
+	border-bottom:2px rgb(75,75,75) solid;
+	color:rgb(75,75,75);
+}
+p a:active, h2 a:active {
+	color:rgb(10,10,10);
+	border-bottom:4px rgb(10,10,10) solid;
+}
+a img {
+	color:rgb(115,115,115);
+	background:rgb(115,115,115);
+}
+	
+
+/* headings */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Meta Serif", sans-serif;
+	font-weight:normal;
+}
+
+h1 {
+	font-size:2.5em;
+	color:rgb(255,255,255);
+	float:left;
+	line-height:50px;
+	vertical-align:middle;
+	display:inline-block;
+	font-style:italic;
+}
+
+h2 {
+	font-size:1.7em;
+	font-weight:bold;
+	letter-spacing:1px;
+	margin-bottom:10px;
+}
+h3 {
+	font-size:1.5em;
+	font-weight:bold;
+}
+h4 {
+	font-size:1.5em;
+}
+h4 strong {
+	font-weight:bold;
+	font-style:italic;
+}
+h5 {
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+/* Navigation Stuff ... */
+
+.navigation {
+	font-size:1.1em;
+}
+.navigation a {
+	color:rgb(200,200,200);
+	text-decoration:none;
+}
+.navigation a:hover {
+	color:rgb(255,255,255);
+	border-bottom:2px rgb(255,255,255) solid;
+}
+.navigation a:active {
+	color:rgb(220,240,250);
+	border-bottom:4px rgb(220,240,250) solid;
+}
+.navigation ul {
+	list-style:none;
+	padding:0;
+}
+
+/* Big Text? */
+.hellotext {
+	font-family:"Meta Serif", serif;
+	font-weight:normal;
+	font-size:2.5em;
+	width:100%;
+	text-align:left;
+	line-height:1.3em;
+	margin:45px 0;
+}
+.hellotext strong {
+	font-weight:bold;
+	font-style:italic;
+}
+.hellotext a:hover {
+	color:rgb(75,75,75);
+	border-bottom:5px rgb(75,75,75) solid;
+}
+.hellotext a:active {
+	color:rgb(10,10,10);
+	border-bottom:10px rgb(10,10,10) solid;
+}
+.hellotext small {
+	font-size:.5em;
+	padding-left:15px;
+}

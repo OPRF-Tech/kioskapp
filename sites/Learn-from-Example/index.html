@@ -1,0 +1,97 @@
+<!doctype html> <!-- First, this doctype declaration is the latest version, use it because you should... -->
+<!-- second, anything inside the !-- and -- tags is a comment, so this text doesn't appear on the page -->
+
+<html> <!-- starts your html page, seems redundant, but you need it, it's a markup language after all -->
+
+<head> <!-- anything in the head is meta data, and not visible on the page, but it can effect the page -->
+	<title>Learn From Example</title> 
+		<!-- anything inside of a <> set is called a tag. The title tag (the one on the line above)
+			 is the text that appears in your browser's tab/title area (so on the top of the browser's
+			 viewing area, it says "Learn From Example".
+			 
+			 Good formatting is also important in html, simply so you can read it yourself when you come back
+			 to the page. Good formatting is generally tabbing in everything inside a tag (when you have tags 
+			 inside of tags it's called nesting), This comment is only tabbed so all the text lines up, and so
+			 it's differentiated.
+		-->
+	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- The link tag is a speicial kind of tag (not because it has other stuff other than link in it, but
+			 give me a second to get to that), it's a self-closing tag, which means that instead of having a
+			 matching </tag> after the opening tag (<tag>) it opens and closes all in one.
+			 
+			 The strings following the initial tag name are called attributes, the link tag has other attributes
+			 besides those, but those are the important ones.
+			 
+			 The link tag tells the browser that you're going to literally link a file to this file. The rel 
+			 attribute tells the browser what this link is going to be (or the what relationship the linked
+			 file has to this file, in this case it's a stylesheet, or a declaration of how the page should look), the type
+			 attribute tells the browser how to interpret that file (or what kind of file you're using, a css
+			 file is always text/css), and the href attribute is where the linked file is located (either 
+			 relative or direct.
+			 
+			 A relative url is one that is kept relative to the current document, it doesn't include a / or http://
+			 before the url. For example, if you were linking to a second page in the same directory as this one,
+			 it would be page2.html, where if you were linking to a page on another site it would be 
+			 http://othersite.tld/page2.html. a / before the url says the file is in the root directory of the site,
+			 and a ../ tells it to go up one folder (so if your file is in the /one/ directory, and you want to link
+			 to file /two/file.html, the url is either /two/file.html or ../two/file.html (both are relative)
+		-->
+	
+	
+	
+</head>
+
+<body> <!-- any content you see on the page happens in the body -->
+	<div id="wrap">
+		<!-- div stands for divider, a div is a block of content. An id attribute is detected in your css file
+			 you only use an id once per page. In this case, it's used to center the content of the page
+		-->
+		
+		<h1>Examples to Learn From</h1> 
+			<!-- I used different text than the title for you to see the difference.
+				 an h1 tag is the heading1, there are 6 headings, each h1-h6.
+				 
+				 See how I tabbed in the <h1> tag one more tab than the div tag, that's an example of clean code
+				 and good nesting code. You can technically not use tabs for nesting, just like you can technically
+				 have all of the contents of your page on one line, but that makes it hard to read and determine what
+				 you're looking at
+			-->
+		
+		<p> <!-- You don't need to put the contents of a paragraph on a separate line tabbed in, I did it to see better -->
+			Upon this every soul was confounded; for the phenomenon just then observed by Ahab had unaccountably 
+			escaped every one else; but its very blinding palpableness must have been the cause. Thrusting his 
+			head half way into the binnacle, Ahab caught one glimpse of the compasses; his uplifted arm slowly 
+			fell; for a moment he almost seemed to stagger. Standing behind him Starbuck looked, and lo! the two 
+			compasses pointed East, and the Pequod was as infallibly going West. But ere the first wild alarm 
+			could get out abroad among the crew, the old man with a rigid laugh exclaimed, "I have it! It has 
+			happened before. Mr. Starbuck, last night's thunder turned &pound;
+		</p>
+			<!-- This text is from Moby Dick by Herman Melville
+				 
+				 I manually formatted my paragraph to have multiple lines for easier reading, you don't have to, but
+				 it's suggested. HTML DOES NOT READ WHITESPACE, but humans do...
+				 
+				 The p tag stands for paragraph, it is you basic text form.
+				 
+				 At the end of my paragraph, I included &pound; I could have included a number of others, but this
+				 is juat an example. In html, to use special characters in text (like the pound symbol, or ampersand),
+				 you need to use an & followed by the specific code for your character, followed by a semicolon.
+				 
+				 The common ones are:
+				 	&amp;	- &
+				 	&nbsp;	- " " (a space, technically a nonbreaking space)
+				 	&lt;	- < - the only way to show a < in text
+				 	&gt;	- > - the only way to show a > in text
+				 	&copy;	- copyright symbol
+				 	&quot;	- " - a quotation mark - you can also use &ldquo; for an opening quotation mark 
+				 				  and &rdquo; for a closing (ldquo - left double quote) (rdquo - right double quote)
+				 	&apos;	= ' = an apostrophy - you can also use &lsquo; for an opening one and &rsquo; for a closing
+				 				  one. (lsquo - left single quote) (rsquo - right single quote)
+			-->
+		
+		
+	</div>
+</body>
+
+</html><!-- stops your html page, again, seems redundant, but it's necessary -->

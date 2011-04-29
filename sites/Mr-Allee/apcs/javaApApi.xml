@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet [<!ENTITY nbsp "&#160;">]> 
+<?xml-stylesheet type="text/xsl" href="/xsl/main.xsl"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<br/>
+<br/>
+<img src="javaApApi.jpg"/>
+<br/>
+</page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet [<!ENTITY nbsp "&#160;">]> 
+<?xml-stylesheet type="text/xsl" href="xsl/main.xsl"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<h2>Contact Infomation</h2>
+
+<p>Email: <a href="mailto:dallee@oprfhs.org">dallee@oprfhs.org</a></p>
+<p>Phone: <strong>708-434-3894</strong></p>
+<p>Mailing Address:
+<blockquote>Oak Park and River Forest High School<br/>
+	ATTN: Doug Allee Rm 398C<br/>
+	201 N. Scoville Ave.<br/>
+	Oak Park, IL 60302
+</blockquote>
+</p>
+</page>

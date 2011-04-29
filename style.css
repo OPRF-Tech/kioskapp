@@ -1,0 +1,232 @@
+@import 'fonts.css';
+
+body, div { padding:0px; margin:0px; border:0px; display:block; }
+
+html. body { height: 100%; }
+
+body {
+	background:url(background.jpg);
+	color:rgb(255,255,255);
+	font-family: "Meta Serif", serif;
+}
+
+#overlay {
+	position: fixed;
+	bottom: 0; left: 0;
+	z-index: 9900; /*--Keeps the panel on top of all other elements--*/
+	background: #000;
+	/*border: 1px solid #c3c3c3;*/
+	border-bottom: none;
+	width: 100%;
+	margin: 0 0;
+	height:50px;
+}
+
+#nav {
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+}
+#nav li {
+	width:130px;
+	height:130px;
+	float:left;
+	margin-top:-15px;
+	margin-right:10px;
+}
+#nav li a {
+	width:55px;
+	height:55px;
+	padding:40px;
+	border-radius:100px;
+	-moz-border-radius:100px;
+	background:rgba(255,255,255,.5);
+	color:rgba(20,20,20,.8);
+	text-decoration:none;
+	font-weight:normal;
+	display:block;
+	cursor:pointer;
+	float:left;
+	margin-top:-25px;
+	margin-right:25px;
+	font-size:1.1em;
+	text-align:center;
+	font-weight:bold;
+	font-family: "Officina Serif", sans-serif;
+	-webkit-transform: rotate(-15deg);
+	-webkit-transition: all .2s ease-in;
+	-moz-transform: rotate(-15deg);
+	-moz-transition: all .2s ease-in;
+	z-index:9991
+}
+#nav li a:hover {
+	-webkit-transform: rotate(15deg);
+	-webkit-transition: all .2s ease-in;
+	-moz-transform: rotate(15deg);
+	-moz-transition: all .2s ease-in;
+	padding:60px;
+	margin-left:-20px;
+	margin-top:-45px;
+	background:rgba(255,255,255,.8);
+	z-index:9999;
+}
+#nav li a:active {
+	
+}
+
+#button a {
+	float:right;
+	width:225px;
+	color:rgb(20,60,215);
+	text-align:center;
+	height:50px;
+	margin-top:-40px;
+	background:rgb(60,100,255);
+	line-height:25px;
+	border:10px solid rgb(60,100,255);
+	border-radius:10px;
+	-moz-border-radius:10px;
+	font-family: "Officina Serif", sans-serif;
+	font-weight:bold;
+	font-size:1.2em;
+	text-shadow:1px 1px 1px rgb(90,130,255);
+	text-decoration:none;
+	-webkit-box-shadow: 0px 5px 0px rgb(90,130,255);
+	-moz-box-shadow: 0px 5px 0px rgb(90,130,255);
+	box-shadow: 0px 5px 0px rgb(90,130,255);
+	cursor:pointer;
+	outline:0;
+}
+#button a:hover {
+	text-shadow:1px 1px 1px rgb(70,110,235);
+	color:rgb(0,40,195);
+	background:rgb(40,80,215);
+	border:10px solid rgb(40,80,215);
+	outline:0;
+}
+#button a:active {
+	margin-top:-35px;
+	-webkit-box-shadow:0px 0px 0px rgb(140,185,180);
+	-moz-box-shadow:0px 0px 0px rgb(140,185,180);
+	box-shadow:0px 0px 0px rgb(140,185,180);
+	text-shadow:1px 1px 1px rgb(70,110,235);
+	color:rgb(0,40,195);
+	background:rgb(40,80,215);
+	border:10px solid rgb(40,80,215);
+	outline:0;
+}
+
+
+.section {
+	width:1000px;
+	margin:0 auto;
+}
+
+#site {
+	margin:20px auto 75px;
+}
+
+#oprftech {
+	height:77px;
+	margin:26px 0 36px;
+	float:right;
+	clear:both;
+}
+
+#big {
+	width:585px;
+	font-size:18pt;
+	float:left;
+	margin:0 20px 0px 0;
+	color:rgb(255,255,255);
+	text-align:justify;
+	line-height:1.4em;
+	max-height:8em;
+	overflow:hidden;
+	display:inline;
+}
+
+.noshow {
+	visibility:hidden;
+}
+
+#normal {
+	width:585px;
+	color:rgb(255,255,255);
+	margin-left:390px;
+	padding-top:100px;
+	line-height:1.5em;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+#normal p {
+	padding-bottom:1em;
+	margin:0;
+}
+
+p a, a:visited {
+	font-weight:bold;
+	color:rgb(150,200,255);
+	text-decoration:none;
+}
+p a:hover, p a:visited:hover {
+	border-bottom:rgb(120,220,200) 2px solid;
+	color:rgb(120,220,200);
+}
+p a:active, p a:visited:active {
+	border-bottom:rgb(220,180,180) 2px solid;
+	color:rgb(220,180,180);
+}
+
+footer {
+	width:330px;
+	margin-top:-4.95em;
+	color:rgb(255,255,255);
+	font-size:.8em;
+	line-height:1.9em;
+	margin-left:40px;
+	text-align:justify;
+}
+footer p {
+	padding:0;
+	margin:0;
+}
+
+code {
+	font-family:"Droid Sans Mono", monospace;
+	font-size:.9em;
+}
+
+ul, ol {
+	margin:0 0 auto;
+}
+
+li {
+	padding-bottom:.8em;
+}
+
+.lfloat {
+	width:360px;
+	float:left;
+	margin-left:-390px;
+	margin-top:0px;
+	text-align:justify;
+}
+.lfloat ul.none {
+	list-style:none;
+	margin:0;
+	padding:0em 0 .5em 0em;
+}
+.lfloat li {
+	padding-bottom:.8em;
+}
+
+li .lfloat {
+	margin-left:-400px;
+	margin-top:0;
+}
+blockquote {
+	font-style:italic;
+	margin-top:0;
+}

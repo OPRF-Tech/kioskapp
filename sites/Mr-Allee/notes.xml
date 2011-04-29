@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet [<!ENTITY nbsp "&#160;">]> 
+<?xml-stylesheet type="text/xsl" href="xsl/main.xsl"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<h2>Notes</h2>
+
+<h3>General</h3>
+<ul class="linklist">
+	<li><a href="apcs/eclipseStuff.xml">Taking Eclipse Projects Home to Work on Them</a></li>
+	<li><a href="apcs/javaApApi.xml">Java API methods tested on the AP</a></li>
+</ul>
+
+<h3>Chapter 4 - Writing Classes</h3>
+<ul class="linklist">
+	<li><a href="apcs/Classes.pdf">Overview of writing Classes</a></li>
+	<li><a href="apcs/methodsSameClass.xml">Writing and calling methods</a></li>
+	<li><a href="apcs/Constructors.pdf">Constructors</a></li>
+	<li><a href="apcs/VariableScope.pdf">Variable Scope</a></li>
+	<li><a href="apcs/Overloading.pdf">Overloading methods (and constructors)</a></li>
+	<li><a href="apcs/Encapsulation.pdf">Encapsulation</a></li>
+</ul>
+<br clear="left" />
+
+<h3>Chapter 6 - Arrays and Array Lists</h3>
+<ul class="linklist">
+	<li><a href="apcs/arrays.xml">Arrays</a></li>
+	<li><a href="apcs/searching.xml">Searching and Sorting</a></li>
+</ul>
+</page>

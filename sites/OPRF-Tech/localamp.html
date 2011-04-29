@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+	<title>A Local *AMP Server | OPRF Tech | The OPRF HS Technology Club</title>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel=stylesheet href=style.css type=css />
+</head>
+<body>
+	<div id=wrapper>
+		<a href=index.html>
+			<img src="oprftech.png" alt="OPRF Tech | The OPRF HS Technology Club" id=oprftech />
+		</a>
+		<br />
+		
+		<article>
+			<div id=big2>
+				<h1>A Local *AMP Server</h1>
+				
+				<em>LAMP - Linux</em><br />
+				<small>
+					Most Linux distros use either apt-get/aptitude or yum. Ubuntu, the distro 
+					we use uses apt-get. This guide is written for an apt-get/aptitude distro (if 
+					you’re using an aptitude distro, replace all instances of apt-get with aptitude
+				</small>
+				<ul>
+					<li>
+						Open your terminal and type the following:
+						<blockquote><code>
+							sudo apt-get install apache2 php5 php5-gd mysql-server mysql-client 
+							php5-mysql libapache2-mod-php5 php5-curl php5-xmlrpc php5-pear
+						</code></blockquote>
+					</li>
+					<li>
+						Bravo, you’ve now got a LAMP server installed. Your www folder (the 
+						directory that contains your web files) is in /var/www, I suggest running 
+						a second terminal command that unlocks that directory perminantly
+						<blockquote><code>
+							sudo chmod -r 0777 /var/www
+						</code></blockquote>
+					</li>
+				</ul>
+				
+				<em>MAMP - Mac</em><br />
+				<small>
+					You need to be running 10.4.0 or higher to use MAMP<br />
+					<strong>MAMP does not load on login</strong>
+				</small>
+				<ul>
+					<li>
+						Head over to <a href=http://mamp.info>http://mamp.info</a>, and download 
+						just the standard mamp (not mamp pro).
+					</li>
+					<li>
+						Drag the MAMP file out of the dmg and put it in your applications folder.
+					</li>
+					<li>
+						Start MAMP, Start Apache and MySQL
+					</li>
+					<li>
+						Open the Preferences, choose the Ports tab, and change the Apache port to 
+						80 (this is the default port looked at when visiting 127.0.0.1)
+					</li>
+					<li>
+						Now open the Apache tab, change the Document root to something else 
+						(unless you like where it is). I suggest /users/[name]/www (or htdocs 
+						instead of www).
+					</li>
+				</ul>
+								
+				<em>WAMP - Windows</em><br />
+				<small>
+					There are lots of options for windows, however EasyPHP, the one shown here is 
+					the easiest to setup and use. You can also use EasyPHP on a flash drive.<br />
+					<strong>EasyPHP does not load on login - you can tell it to do so if you want through the
+					control panel</strong>
+				</small>
+				<ul>
+					<li>
+						Head over to <a href=http://www.easyphp.org>http://www.easyphp.org</a> and 
+						download EasyPHP (not a module pack).
+					</li>
+					<li>
+						Run the installer when it’s done downloading.
+					</li>
+					<li>
+						Choose a directory you want for it to be installed in (I use 
+						c:\users\[name]\localhost. If you want to do that, after you choose the 
+						localhost folder (which you have to make) remove the \easyphp[version] from 
+						the install location string)
+					</li>
+					<li>
+						I personally change the start menu text from easyphp[version] to just 
+						easyphp, but you can choose whatever you want.
+					</li>
+					<li>
+						Now head over to your chosen directory and run EasyPHP[version].exe
+						
+						<ul>
+							<li>
+								If you go to 127.0.0.1 and don’t see anything or get an error, 
+								open easyphpdir\conf_files and open httpd.conf in your text editor
+							</li>
+							<li>
+								Now search for 127.0.0.1. If you find any instances that aren’t 
+								commented out (that don’t have a # before them) and aren’t 127.0.0.1:80, 
+								replace them to be 127.0.0.1:80
+							</li>
+							<li>
+								Now try going to 127.0.0.1 in your browser again
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+			
+			
+			
+			</div>
+			
+			<div id=normal2>
+				<h1>FAQ</h1>	
+				<ol>
+					<li>
+						What is *AMP?
+						<blockquote>
+							*AMP is * (variable placeholder) Apache MySQL PHP server. The variable 
+							placeholder is for your computer’s operating system, L for Linux (LAMP), 
+							M for Mac (MAMP) and W for Windows (WAMP)
+						</blockquote>
+					</li>
+					<li>
+						Why do I want One?
+						<blockquote>
+							An *AMP server is useful for local development of php/mysql or higher level 
+							web development projects. I essentially gives you a server to play with 
+							that’s only accessible on your computer, so it’s just for you.
+						</blockquote>
+					</li>
+					<li>
+						How will I know it's working?
+						<blockquote>
+							Open a web browser and head over to 127.0.0.1, if you get any sort of It 
+							Works page, you’re golden (though some may have different pages shown)
+						</blockquote>
+					</li>
+				</ol>
+				
+			</div>
+		</article>
+	</div>
+</body>
+</html>
