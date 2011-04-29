@@ -13,3 +13,5 @@ the see signups section work, you'll need to configure that through `sites/See-S
 Any circle button along the bottom of the page needs to be included in a directory in the 
 `sites` directory. Any space in the name needs to be a dash (`-`), the system does read
 capitalizations.
+
+The `sites/OPRF-Tech/` directory can also be found at OPRF-Tech/TechWeb on github.
